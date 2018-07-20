@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Adrian Bandolon-CS498 Data Visualization Project</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Oxigen|Open+Sans" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="easings.js"></script>
+    
+
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 710px; padding-left: 3%; padding-right: 1.5%;">
+            <div class="fp-tableCell" style="height: 710px;">
+                <div style="float: left; width: 47%;">
+                    <div style="font-size: 95px; font-weight: bold; color:#f0f0f0;">Global Poverty<br></div>
+                    <p style="font-size: 33.5px; -webkit-margin-before: 0.2em; -webkit-margin-after: 0.1em; color:#969696;">A Data Visualization Project</p>
+                    <p style="font-size: 20px; -webkit-margin-before: 0.2em; -webkit-margin-after: 0.1em; color:#969696;">By: <b>Adrian Bandolon</b></p><br><br />
+                    <div class="bodyText">
+                        <div style="font-size: 16px; font-weight: bold; color:#f0f0f0;">
+                            <font color="ff3333" size="+4">Poverty </font> <font size="+2">is the state of one who lacks a usual or socially acceptable amount of money or material possesions. The <font color="#0092cc">World Bank</font> is the main source of information on poverty. It sets the <font color="#0092cc">International Poverty Line</font>. A person is considered to be in poverty if they live on less than <font color="ff3333">1.90 international dollars per day</font>. The <font color="#0092cc">International Dollar</font> is a unit of currency used by economists to compare values of different currencies. It is important to point out that living conditions well above the International Poverty Line can still be characterized as poor and difficult.</font>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 759px; padding-left: 3%; padding-right: 1%">
+            <div class="slide">
+                <div style="float: right; width: 70%; text-align: center">
+                    <div style="padding-right: 140px; font-size: 20px; font-weight: bold;">Fertility Rate by region<br></div>
+                    <div class="fp-tableCell" style="height: 710px">
+                        <svg id="Global" width="900" height="500"></svg>
+                    </div>
+                </div>
+
+                <div style="float: left; width: 30%;">
+                    <p style="font-size: 60px; font-weight: bold; color:#1a1a1a;">This just a Test<br></p>
+                    <p style="font-size: 16px; font-weight: bold; color:#1a1a1a;">This just a Test</p>
+                    <p class="bodyText">This just a Test.</p>
+                    <p style="font-size: 16px; font-weight: bold; color:#1a1a1a;">This just a Test</p>
+                    <p class="bodyText">This just a Test</p>
+                </div>
+
+            </div>
+
+            <div class="slide" style="background-color:#808080">slide 2</div>
+            <div class="slide">slide 3</div>
+        </div>
+
+        <div class="section">
+            <div class="slide">slide 1</div>
+            <div class="slide">slide 2</div>
+            <div class="slide">slide 3</div>
+        </div>
+        <div class="section">Section 3</div>
+        <div class="section">Section 4</div>
+    </div>
+
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript">
+
+        //fullpage initialization
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //options here
+                sectionsColor: ['#000000', '#f0f0f0', '#7baabe', 'whitesmoke'],
+                //navigation: true,
+                //navigation: 'right',
+                parallax: true
+            });
+        });
+
+        // stacked area graph
+        var svg = d3.select("#Global"),
+            margin = { top: 50, right: 50, bottom: 30, left: 50 },
+            width = svg.attr("width") - margin.left - margin.right,
+            height = svg.attr("height") - margin.top - margin.bottom;
+
+        var parseDate = d3.timeParse("%Y %b %d");
+
+        var x = d3.scaleTime().range([0, width]),
+            y = d3.scaleLinear().range([height, 0]),
+            z = d3.scaleOrdinal(d3.schemeCategory10);
+
+        var stack = d3.stack();
+
+        var area = d3.area()
+            .x(function (d, i) { return x(d.data.date); })
+            .y0(function (d) { return y(d[0]); })
+            .y1(function (d) { return y(d[1]); });
+
+        var g = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.tsv("./data/data.tsv", type, function (error, data) {
+            if (error) throw error;
+
+            var keys = data.columns.slice(1);
+
+            x.domain(d3.extent(data, function (d) { return d.date; }));
+            z.domain(keys);
+            stack.keys(keys);
+
+            var layer = g.selectAll(".layer")
+                .data(stack(data))
+                .enter().append("g")
+                .attr("class", "layer");
+
+            layer.append("path")
+                .attr("class", "area")
+                .style("fill", function (d) { return z(d.key); })
+                .attr("d", area);
+
+            layer.filter(function (d) { return d[d.length - 1][1] - d[d.length - 1][0] > 0.01; })
+                .append("text")
+                .attr("x", width - 6)
+                .attr("y", function (d) { return y((d[d.length - 1][0] + d[d.length - 1][1]) / 2); })
+                .attr("dy", ".35em")
+                .style("font", "10px sans-serif")
+                .style("text-anchor", "end")
+                .text(function (d) { return d.key; });
+
+            g.append("g")
+                .attr("class", "axis axis--x")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            g.append("g")
+                .attr("class", "axis axis--y")
+                .call(d3.axisLeft(y).ticks(10, "%"));
+        });
+
+        function type(d, i, columns) {
+            d.date = parseDate(d.date);
+            for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = d[columns[i]] / 100;
+            return d;
+        }
+
+    </script>
+</body>
+</html>
