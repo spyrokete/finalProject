@@ -1,0 +1,263 @@
+id,name,population
+AFG,Afghanistan,No Data
+ALB,Albania,No Data
+DZA,Algeria,No Data
+ASM,American Samoa,No Data
+AND,Andorra,No Data
+AGO,Angola,No Data
+ATG,Antigua and Barbuda,No Data
+ARG,Argentina,No Data
+ARM,Armenia,0.4
+ABW,Aruba,No Data
+AUS,Australia,No Data
+AUT,Austria,0.5
+AZE,Azerbaijan,No Data
+BHS,"Bahamas, The",No Data
+BHR,Bahrain,No Data
+BGD,Bangladesh,No Data
+BRB,Barbados,No Data
+BLR,Belarus,No Data
+BEL,Belgium,No Data
+BLZ,Belize,No Data
+BEN,Benin,22.4
+BMU,Bermuda,No Data
+BTN,Bhutan,No Data
+BOL,Bolivia,2.8
+BIH,Bosnia and Herzegovina,0.1
+BWA,Botswana,No Data
+BRA,Brazil,1.2
+VGB,British Virgin Islands,No Data
+BRN,Brunei Darussalam,No Data
+BGR,Bulgaria,No Data
+BFA,Burkina Faso,No Data
+BDI,Burundi,No Data
+CPV,Cabo Verde,No Data
+KHM,Cambodia,No Data
+CMR,Cameroon,No Data
+CAN,Canada,No Data
+CYM,Cayman Islands,No Data
+CAF,Central African Republic,No Data
+TCD,Chad,No Data
+CHI,Channel Islands,No Data
+CHL,Chile,0.8
+CHN,China,No Data
+COL,Colombia,1.7
+COM,Comoros,No Data
+COD,"Congo, Dem. Rep.",No Data
+COG,"Congo, Rep.",No Data
+CRI,Costa Rica,0.6
+CIV,Cote d'Ivoire,9.1
+HRV,Croatia,0.4
+CUB,Cuba,No Data
+CUW,Curacao,No Data
+CYP,Cyprus,No Data
+CZE,Czech Republic,No Data
+DNK,Denmark,0.1
+DJI,Djibouti,No Data
+DMA,Dominica,No Data
+DOM,Dominican Republic,0.5
+ECU,Ecuador,1.2
+EGY,"Egypt, Arab Rep.",0.2
+SLV,El Salvador,0.4
+GNQ,Equatorial Guinea,No Data
+ERI,Eritrea,No Data
+EST,Estonia,0.4
+ETH,Ethiopia,7.7
+FRO,Faroe Islands,No Data
+FJI,Fiji,No Data
+FIN,Finland,No Data
+FRA,France,No Data
+PYF,French Polynesia,No Data
+GAB,Gabon,No Data
+GMB,"Gambia, The",2.2
+GEO,Georgia,1
+DEU,Germany,No Data
+GHA,Ghana,No Data
+GIB,Gibraltar,No Data
+GRC,Greece,0.8
+GRL,Greenland,No Data
+GRD,Grenada,No Data
+GUM,Guam,No Data
+GTM,Guatemala,No Data
+GIN,Guinea,No Data
+GNB,Guinea-Bissau,No Data
+GUY,Guyana,No Data
+HTI,Haiti,No Data
+HND,Honduras,5.6
+HKG,"Hong Kong SAR, China",No Data
+HUN,Hungary,0.3
+ISL,Iceland,No Data
+IND,India,No Data
+IDN,Indonesia,1.2
+IRN,"Iran, Islamic Rep.",No Data
+IRQ,Iraq,No Data
+IRL,Ireland,No Data
+IMN,Isle of Man,No Data
+ISR,Israel,No Data
+ITA,Italy,No Data
+JAM,Jamaica,No Data
+JPN,Japan,No Data
+JOR,Jordan,No Data
+KAZ,Kazakhstan,No Data
+KEN,Kenya,No Data
+KIR,Kiribati,No Data
+PRK,"Korea, Dem. People’s Rep.",No Data
+KOR,"Korea, Rep.",No Data
+XKX,Kosovo,0.1
+KWT,Kuwait,No Data
+KGZ,Kyrgyz Republic,0.5
+LAO,Lao PDR,No Data
+LVA,Latvia,0.4
+LBN,Lebanon,No Data
+LSO,Lesotho,No Data
+LBR,Liberia,No Data
+LBY,Libya,No Data
+LIE,Liechtenstein,No Data
+LTU,Lithuania,0.5
+LUX,Luxembourg,No Data
+MAC,"Macao SAR, China",No Data
+MKD,"Macedonia, FYR",No Data
+MDG,Madagascar,No Data
+MWI,Malawi,No Data
+MYS,Malaysia,No Data
+MDV,Maldives,No Data
+MLI,Mali,No Data
+MLT,Malta,No Data
+MHL,Marshall Islands,No Data
+MRT,Mauritania,No Data
+MUS,Mauritius,No Data
+MEX,Mexico,No Data
+FSM,"Micronesia, Fed. Sts.",No Data
+MDA,Moldova,No Data
+MCO,Monaco,No Data
+MNG,Mongolia,No Data
+MNE,Montenegro,No Data
+MAR,Morocco,No Data
+MOZ,Mozambique,No Data
+MMR,Myanmar,1.5
+NAM,Namibia,No Data
+NRU,Nauru,No Data
+NPL,Nepal,No Data
+NLD,Netherlands,No Data
+NCL,New Caledonia,No Data
+NZL,New Zealand,No Data
+NIC,Nicaragua,No Data
+NER,Niger,No Data
+NGA,Nigeria,No Data
+MNP,Northern Mariana Islands,No Data
+NOR,Norway,No Data
+OMN,Oman,No Data
+PAK,Pakistan,No Data
+PLW,Palau,No Data
+PAN,Panama,0.5
+PNG,Papua New Guinea,No Data
+PRY,Paraguay,0.4
+PER,Peru,1
+PHL,Philippines,1.6
+POL,Poland,No Data
+PRT,Portugal,0.3
+PRI,Puerto Rico,No Data
+QAT,Qatar,No Data
+ROU,Romania,No Data
+RUS,Russian Federation,No Data
+RWA,Rwanda,No Data
+WSM,Samoa,No Data
+SMR,San Marino,No Data
+STP,Sao Tome and Principe,No Data
+SAU,Saudi Arabia,No Data
+SEN,Senegal,No Data
+SRB,Serbia,No Data
+SYC,Seychelles,No Data
+SLE,Sierra Leone,No Data
+SGP,Singapore,No Data
+SXM,Sint Maarten (Dutch part),No Data
+SVK,Slovak Republic,0.3
+SVN,Slovenia,No Data
+SLB,Solomon Islands,No Data
+SOM,Somalia,No Data
+ZAF,South Africa,No Data
+SSD,South Sudan,No Data
+ESP,Spain,0.6
+LKA,Sri Lanka,No Data
+KNA,St. Kitts and Nevis,No Data
+LCA,St. Lucia,No Data
+MAF,St. Martin (French part),No Data
+VCT,St. Vincent and the Grenadines,No Data
+SDN,Sudan,No Data
+SUR,Suriname,No Data
+SWZ,Swaziland,No Data
+SWE,Sweden,0.3
+CHE,Switzerland,No Data
+SYR,Syrian Arab Republic,No Data
+TJK,Tajikistan,1
+TZA,Tanzania,No Data
+THA,Thailand,No Data
+TLS,Timor-Leste,No Data
+TGO,Togo,19.9
+TON,Tonga,No Data
+TTO,Trinidad and Tobago,No Data
+TUN,Tunisia,No Data
+TUR,Turkey,0.1
+TKM,Turkmenistan,No Data
+TCA,Turks and Caicos Islands,No Data
+TUV,Tuvalu,No Data
+UGA,Uganda,No Data
+UKR,Ukraine,No Data
+ARE,United Arab Emirates,No Data
+GBR,United Kingdom,0.1
+USA,United States,No Data
+URY,Uruguay,No Data
+UZB,Uzbekistan,No Data
+VUT,Vanuatu,No Data
+VEN,"Venezuela, RB",No Data
+VNM,Vietnam,No Data
+VIR,Virgin Islands (U.S.),No Data
+PSE,West Bank and Gaza,No Data
+YEM,"Yemen, Rep.",No Data
+ZMB,Zambia,29.5
+ZWE,Zimbabwe,No Data
+ARB,Arab World,No Data
+CSS,Caribbean small states,No Data
+CEB,Central Europe and the Baltics,No Data
+EAR,Early-demographic dividend,No Data
+EAS,East Asia & Pacific,No Data
+EAP,East Asia & Pacific (excluding high income),No Data
+TEA,East Asia & Pacific (IDA & IBRD countries),No Data
+EMU,Euro area,No Data
+ECS,Europe & Central Asia,No Data
+ECA,Europe & Central Asia (excluding high income),No Data
+TEC,Europe & Central Asia (IDA & IBRD countries),No Data
+EUU,European Union,No Data
+FCS,Fragile and conflict affected situations,No Data
+HPC,Heavily indebted poor countries (HIPC),No Data
+HIC,High income,No Data
+IBD,IBRD only,No Data
+IBT,IDA & IBRD total,No Data
+IDB,IDA blend,No Data
+IDX,IDA only,No Data
+IDA,IDA total,No Data
+LTE,Late-demographic dividend,No Data
+LCN,Latin America & Caribbean,No Data
+LAC,Latin America & Caribbean (excluding high income),No Data
+TLA,Latin America & the Caribbean (IDA & IBRD countries),No Data
+LDC,Least developed countries: UN classification,No Data
+LMY,Low & middle income,No Data
+LIC,Low income,No Data
+LMC,Lower middle income,No Data
+MEA,Middle East & North Africa,No Data
+MNA,Middle East & North Africa (excluding high income),No Data
+TMN,Middle East & North Africa (IDA & IBRD countries),No Data
+MIC,Middle income,No Data
+NAC,North America,No Data
+INX,Not classified,No Data
+OED,OECD members,No Data
+OSS,Other small states,No Data
+PSS,Pacific island small states,No Data
+PST,Post-demographic dividend,No Data
+PRE,Pre-demographic dividend,No Data
+SST,Small states,No Data
+SAS,South Asia,No Data
+TSA,South Asia (IDA & IBRD),No Data
+SSF,Sub-Saharan Africa,No Data
+SSA,Sub-Saharan Africa (excluding high income),No Data
+TSS,Sub-Saharan Africa (IDA & IBRD countries),No Data

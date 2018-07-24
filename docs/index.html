@@ -3,129 +3,239 @@
 <head>
     <title>Adrian Bandolon-CS498 Data Visualization Project</title>
     <meta charset="utf-8" />
-
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Oxigen|Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="fullpage.js"></script>
     <script src="easings.js"></script>
-    
-
-
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+    <script src="tooltip.js"></script>
 </head>
 
 <body>
+    <!--start of body-->
     <div id="fullpage">
+        <!--first slide. Introduction-->
         <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 710px; padding-left: 3%; padding-right: 1.5%;">
             <div class="fp-tableCell" style="height: 710px;">
-                <div style="float: left; width: 47%;">
-                    <div style="font-size: 95px; font-weight: bold; color:#f0f0f0;">Global Poverty<br></div>
-                    <p style="font-size: 33.5px; -webkit-margin-before: 0.2em; -webkit-margin-after: 0.1em; color:#969696;">A Data Visualization Project</p>
-                    <p style="font-size: 20px; -webkit-margin-before: 0.2em; -webkit-margin-after: 0.1em; color:#969696;">By: <b>Adrian Bandolon</b></p><br><br />
+                <div style="float: left; width: 50%;">
+                    <!--Title-->
+                    <div style="font-size: 95px; font-weight: bold; color:#000000; font-family: 'Playfair Display', serif;">poverty</div>
+                    <p style="font-size: 35px; -webkit-margin-before: -1.0em; -webkit-margin-after: 0.8em; color:#8e8d8a; font-family: 'Playfair Display', serif; padding-left: 10%">around the world</p>
+
                     <div class="bodyText">
-                        <div style="font-size: 16px; font-weight: bold; color:#f0f0f0;">
-                            <font color="ff3333" size="+4">Poverty </font> <font size="+2">is the state of one who lacks a usual or socially acceptable amount of money or material possesions. The <font color="#0092cc">World Bank</font> is the main source of information on poverty. It sets the <font color="#0092cc">International Poverty Line</font>. A person is considered to be in poverty if they live on less than <font color="ff3333">1.90 international dollars per day</font>. The <font color="#0092cc">International Dollar</font> is a unit of currency used by economists to compare values of different currencies. It is important to point out that living conditions well above the International Poverty Line can still be characterized as poor and difficult.</font>
+                        <!--Intro Paragraph-->
+                        <div style="font-size: 16px; font-weight: bold; color:#000000; font-family: 'Playfair Display', serif; text-align: justify;">
+                            <font color="e85a4f" size="+4">poverty </font> <font size="+2">is the state of one who lacks the usual or socially acceptable amount of money or material possesions. The <font color="#0092cc">World Bank</font> is the main source of information on poverty. It sets the <font color="#0092cc">International Poverty Line</font>. A person is considered to be in poverty if they live on less than <font color="#0092cc">1.90 international dollars per day</font>. An <font color="#0092cc">International Dollar</font> is a unit of currency used by economists to compare values of different currencies. It is important to point out that living conditions well above the International Poverty Line can still be characterized as poor and difficult.</font>
                         </div><br>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 759px; padding-left: 3%; padding-right: 1%">
-            <div class="slide">
-                <div style="float: right; width: 70%; text-align: center">
-                    <div style="padding-right: 140px; font-size: 20px; font-weight: bold;">Fertility Rate by region<br></div>
-                    <div class="fp-tableCell" style="height: 710px">
-                        <svg id="Global" width="900" height="500"></svg>
-                    </div>
-                </div>
 
-                <div style="float: left; width: 30%;">
-                    <p style="font-size: 60px; font-weight: bold; color:#1a1a1a;">This just a Test<br></p>
-                    <p style="font-size: 16px; font-weight: bold; color:#1a1a1a;">This just a Test</p>
-                    <p class="bodyText">This just a Test.</p>
-                    <p style="font-size: 16px; font-weight: bold; color:#1a1a1a;">This just a Test</p>
-                    <p class="bodyText">This just a Test</p>
-                </div>
-
+        <!--First Section-World Map (With D3 sliders for each Year)-->
+        <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 759px; padding-left: 1px; padding-right: 4%">
+            <div style="float: left; width: 60%; padding-right: 1px">
+                <svg id="GlobeMap"></svg>
             </div>
 
-            <div class="slide" style="background-color:#808080">slide 2</div>
-            <div class="slide">slide 3</div>
+            <div style="float: right; width: 31%;">
+                <br />
+                <p style="font-size: 20px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                    Around the world, the share of people living in <font color="eae7dc" size="+2">poverty</font> has been decreasing since the World Bank started keeping records in 1981.
+                </p>
+                <p style="font-size: 25px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                    <font color="eae7dc" size="+2">Poverty</font> is measured by setting a poverty line and counting the number of people living with consumption levels below that poverty line.
+                </p>
+            </div>
         </div>
 
-        <div class="section">
-            <div class="slide">slide 1</div>
-            <div class="slide">slide 2</div>
-            <div class="slide">slide 3</div>
+        <!--Second Section-Current State of Poverty in the World-->
+        <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 759px; padding-left: 4%; padding-right: 5%">
+            <!--Narration Div-->
+            <div style="float: left; width: 30%;">
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <p style="font-size: 20px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                    Around the world, the share of people living in <font color="eae7dc" size="+2">poverty</font> has been decreasing since the World Bank started keeping records in 1981.
+                </p>
+                <p style="font-size: 25px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                    <font color="eae7dc" size="+2">Poverty</font> is measured by setting a poverty line and counting the number of people living with consumption levels below that poverty line. This is the so-called poverty <font color="#4056a1">Headcount Ratio</font>. The  Headcount Ratio tells us the share of the population living with consumption below the poverty line.
+                </p>
+            </div>
+
+            <!--Figure 2 Div-->
+            <div style="float: right; width: 70%; text-align: center">
+                <!--Second Figure SVG-->
+                <div class="fp-tableCell" style="height: 710px; padding-left: 5%">
+                    <svg id="Global" width="960" height="500"></svg>
+                </div>
+            </div>
         </div>
         <div class="section">Section 3</div>
         <div class="section">Section 4</div>
     </div>
 
-    <script src="//d3js.org/d3.v4.min.js"></script>
     <script type="text/javascript">
 
         //fullpage initialization
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //options here
-                sectionsColor: ['#000000', '#f0f0f0', '#7baabe', 'whitesmoke'],
-                //navigation: true,
-                //navigation: 'right',
+                sectionsColor: ['#2f4454', '#3d586d', '#8e8d8a', 'whitesmoke'],
+                navigation: true,
+                navigation: 'right',
                 parallax: true
             });
         });
 
-        // stacked area graph
+        // utilities
+        var parseTime = d3.timeParse("%Y")
+
+
+        // figure 1 variables (world map figure)
+        var format = d3.format(",");
+
+        var tip = d3.tip()
+            .attr('class', 'tooltip')
+            .offset([0, 0])
+            .html(function (d) {
+                return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>% of Population in Poverty: </strong><span class='details'>" + d.population + " %"+ "</span>";
+            })
+
+        var margin1 = { top: 0, right: 0, bottom: 0, left: 0 },
+            width1 = 1000 - margin1.left - margin1.right,
+            height1 = 750 - margin1.top - margin1.bottom;
+
+        var color = d3.scaleThreshold()
+            .domain([0.1, 1, 5, 10, 15, 20, 25, 30])
+            .range(["#000000", "#d8bfd8", "#ba55d3", "#8a2be2", "#8b008b", "#4b0082", "#320056"]);
+
+        var path = d3.geoPath();
+
+        var svg1 = d3.select("#GlobeMap")
+            .attr("width", width1)
+            .attr("height", height1)
+            .append('g')
+            .attr('class', 'map');
+
+        var projection = d3.geoMercator()
+            .scale(215)
+            .translate([width1 / 1.5, height1 / 1.5]);
+
+        var path = d3.geoPath().projection(projection);
+
+        svg1.call(tip);
+
+        // Legend
+        var g1 = svg1.append("g")
+            .attr("class", "legendThreshold")
+            .attr("transform", "translate(20,600)");
+
+        g1.append("text")
+            .attr("class", "caption")
+            .attr("x", 0)
+            .attr("y", -15)
+            .text("% of Population in Poverty, 2014");
+
+        var labels = ['No Data', '0.1-1', '1-5', '5-10', '10-15', '15-20', '20-30'];
+
+        var legend = d3.legendColor()
+            .labels(function (d) { return labels[d.i]; })
+            .shapePadding(0)
+            .scale(color);
+
+        svg1.select(".legendThreshold")
+            .call(legend);
+
+        svg1.call(tip);
+        queue()
+            .defer(d3.json, "http://enjalot.github.io/wwsd/data/world/world-110m.geojson")
+            .defer(d3.csv, "./data/poverty_map1.csv")
+            .await(ready);
+
+        function ready(error, data, population) {
+            var populationById = {};
+
+            population.forEach(function (d) { populationById[d.id] = +d.population; });
+            data.features.forEach(function (d) { d.population = populationById[d.id] });
+
+            svg1.append("g")
+                .attr("class", "countries")
+                .selectAll("path")
+                .data(data.features)
+                .enter().append("path")
+                .attr("d", path)
+                .style("fill", function (d) { return color(populationById[d.id]); })
+                .style("stroke", "white")
+                .style('stroke-width', 1)
+                .style("opacity", 0.8)
+                // tooltips
+                .style("stroke", "white")
+                .style('stroke-width', 0.3)
+                .on('mouseover', function (d) {
+                    tip.show(d);
+
+                    d3.select(this)
+                        .style("opacity", 1)
+                        .style("stroke", "white")
+                        .style("stroke-width", 3);
+                })
+
+                .on('mouseout', function (d) {
+                    tip.hide(d);
+
+                    d3.select(this)
+                        .style("opacity", 0.8)
+                        .style("stroke", "white")
+                        .style("stroke-width", 0.3);
+                });
+
+            svg.append("path")
+                .datum(topojson.mesh(data.features, function (a, b) { return a.id !== b.id; }))
+                // .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
+                .attr("class", "names")
+                .attr("d", path);
+        }
+
+
+
+        //-------------FIGURE 2-----------------//
+        // figure 2 variables
         var svg = d3.select("#Global"),
-            margin = { top: 50, right: 50, bottom: 30, left: 50 },
-            width = svg.attr("width") - margin.left - margin.right,
-            height = svg.attr("height") - margin.top - margin.bottom;
+            margin = { top: 25, right: 80, bottom: 30, left: 40 },
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom;
 
-        var parseDate = d3.timeParse("%Y %b %d");
+        //var parseTime = d3.timeParse("%Y")
+        bisectDate = d3.bisector(function (d) { return d.year; }).left;
 
-        var x = d3.scaleTime().range([0, width]),
-            y = d3.scaleLinear().range([height, 0]),
-            z = d3.scaleOrdinal(d3.schemeCategory10);
+        var formatTime = d3.timeFormat("%Y")
 
-        var stack = d3.stack();
+        var x = d3.scaleTime().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
 
-        var area = d3.area()
-            .x(function (d, i) { return x(d.data.date); })
-            .y0(function (d) { return y(d[0]); })
-            .y1(function (d) { return y(d[1]); });
+        var line = d3.line()
+            .x(function (d) { return x(d.year); })
+            .y(function (d) { return y(d.value); });
 
         var g = svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        d3.tsv("./data/data.tsv", type, function (error, data) {
+        //figure 2
+        d3.json("./data/slide1_data.json", function (error, data) {
             if (error) throw error;
 
-            var keys = data.columns.slice(1);
+            data.forEach(function (d) {
+                d.year = parseTime(d.year);
+                d.value = +d.value;
+            });
 
-            x.domain(d3.extent(data, function (d) { return d.date; }));
-            z.domain(keys);
-            stack.keys(keys);
-
-            var layer = g.selectAll(".layer")
-                .data(stack(data))
-                .enter().append("g")
-                .attr("class", "layer");
-
-            layer.append("path")
-                .attr("class", "area")
-                .style("fill", function (d) { return z(d.key); })
-                .attr("d", area);
-
-            layer.filter(function (d) { return d[d.length - 1][1] - d[d.length - 1][0] > 0.01; })
-                .append("text")
-                .attr("x", width - 6)
-                .attr("y", function (d) { return y((d[d.length - 1][0] + d[d.length - 1][1]) / 2); })
-                .attr("dy", ".35em")
-                .style("font", "10px sans-serif")
-                .style("text-anchor", "end")
-                .text(function (d) { return d.key; });
+            x.domain(d3.extent(data, function (d) { return d.year; }));
+            y.domain([d3.min(data, function (d) { return d.value; }), d3.max(data, function (d) { return d.value; })]);
 
             g.append("g")
                 .attr("class", "axis axis--x")
@@ -134,14 +244,74 @@
 
             g.append("g")
                 .attr("class", "axis axis--y")
-                .call(d3.axisLeft(y).ticks(10, "%"));
-        });
+                .call(d3.axisLeft(y).ticks(8).tickFormat(function (d) { return parseInt(d) + "%"; }))
+                .append("text")
+                .attr("class", "axis-title")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 5)
+                .attr("dy", ".71em")
+                .attr("x", -30)
+                .attr("font-size", "20px")
+                .style("text-anchor", "end")
+                .text("Percent of the World in Poverty");
 
-        function type(d, i, columns) {
-            d.date = parseDate(d.date);
-            for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = d[columns[i]] / 100;
-            return d;
-        }
+            g.append("path")
+                .datum(data)
+                .attr("class", "line")
+                .attr("d", line);
+
+            var focus = g.append("g")
+                .attr("class", "focus")
+                .style("display", "none");
+
+            focus.append("line")
+                .attr("class", "x-hover-line hover-line")
+                .attr("y1", 0)
+                .attr("y2", height);
+
+            focus.append("line")
+                .attr("class", "y-hover-line hover-line")
+                .attr("x1", width)
+                .attr("x2", width);
+
+            focus.append("circle")
+                .attr("r", 7.5);
+
+            focus.append("text")
+                .attr("class", "y1")
+                .attr("x", 15)
+                .attr("dy", ".41em")
+                .attr("fill", "#f0f0f0");
+
+            focus.append("text")
+                .attr("class", "y2")
+                .attr("x", 20)
+                .attr("dy", "-.80em")
+                .attr("fill", "#000000");
+
+            svg.append("rect")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .attr("class", "overlay")
+                .attr("width", width)
+                .attr("height", height)
+                .on("mouseover", function () { focus.style("display", null); })
+                .on("mouseout", function () { focus.style("display", null); })
+                .on("mousemove", mousemove);
+
+            function mousemove() {
+
+                var x0 = x.invert(d3.mouse(this)[0]),
+                    i = bisectDate(data, x0, 1),
+                    d0 = data[i - 1],
+                    d1 = data[i],
+                    d = x0 - d0.year > d1.year - x0 ? d1 : d0
+                focus.attr("transform", "translate(" + x(d.year) + "," + y(d.value) + ")");
+                focus.select("text.y1").text(function () { return d.value + "%" });
+                focus.select("text.y2").text(function () { return formatTime(d.year) });
+                focus.select(".x-hover-line").attr("y2", height - y(d.value));
+                focus.select(".y-hover-line").attr("x2", width + width);
+            }
+        });
 
     </script>
 </body>
