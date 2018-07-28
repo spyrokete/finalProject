@@ -24,12 +24,12 @@
             <div class="fp-tableCell" style="height: 710px;">
                 <div style="float: left; width: 50%;">
                     <!--Title-->
-                    <div style="font-size: 95px; font-weight: bold; color:#000000; font-family: 'Playfair Display', serif;">poverty</div>
-                    <p style="font-size: 35px; -webkit-margin-before: -1.0em; -webkit-margin-after: 0.8em; color:#8e8d8a; font-family: 'Playfair Display', serif; padding-left: 10%">around the world</p>
+                    <div style="font-size: 400px; font-weight: bold; color:#415e75; font-family: 'Playfair Display', serif; text-align:center; text-shadow:2px 2px 5px #1d2a33">poverty</div>
+                    <p style="font-size: 50px; -webkit-margin-before: -12.5em; -webkit-margin-after: 0.8em; color:#8e8d8a; font-family: 'Playfair Display', serif; padding-left: 10%"></p>
 
                     <div class="bodyText">
                         <!--Intro Paragraph-->
-                        <div style="font-size: 16px; font-weight: bold; color:#000000; font-family: 'Playfair Display', serif; text-align: justify;">
+                        <div style="font-size: 16px; font-weight: bold; color:#aeaeae; font-family: 'Playfair Display', serif; text-align: justify;">
                             <font color="e85a4f" size="+4">poverty </font> <font size="+2">is the state of one who lacks the usual or socially acceptable amount of money or material possesions. The <font color="#0092cc">World Bank</font> is the main source of information on poverty. It sets the <font color="#0092cc">International Poverty Line</font>. A person is considered to be in poverty if they live on less than <font color="#0092cc">1.90 international dollars per day</font>. An <font color="#0092cc">International Dollar</font> is a unit of currency used by economists to compare values of different currencies. It is important to point out that living conditions well above the International Poverty Line can still be characterized as poor and difficult.</font>
                         </div><br>
                     </div>
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <!--First Section-World Map (With D3 sliders for each Year)-->
+        <!--First Section-World Map-->
         <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 759px; padding-left: 1px; padding-right: 4%">
             <div style="float: left; width: 60%; padding-right: 1px">
                 <svg id="GlobeMap"></svg>
@@ -45,22 +45,24 @@
 
             <div style="float: right; width: 31%;">
                 <br />
-                <p style="font-size: 20px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                <p style="font-size: 20px; font-weight: bold; color:#d2d2d2; text-align:justify; font-family: 'Playfair Display', serif;">
                     Data on poverty levels are scarce, due to the difficulty in conducting surveys particularly in the poorest countries and in countries with fragile situations. Income is generally more difficult to measure accurately, and consumption comes closer to the notion of living standards. Income can vary over time even if living standards do not. But consumption data are not always available: the latest estimates reported here use consumption data.
                 </p>
 
-                <p style="font-size: 20px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
-                    Of note, as of 2014 <font color="320056" size="+2">Zambia</font>  (<font color="e85a4f" size="+2">29.5%</font> of the population) and <font color="320056" size="+2">Benin</font> (<font color="e85a4f" size="+2">22.4%</font> of the population) reported that highest share of the population living below 1.09 internation dollars.
+                <p style="font-size: 20px; font-weight: bold; color:#d2d2d2; text-align:justify; font-family: 'Playfair Display', serif;">
+                    Of note, as of 2014 <font color="320056" size="+2">Zambia</font>  (<font color="e85a4f" size="+2">29.5%</font> of the population) and <font color="320056" size="+2">Benin</font> (<font color="e85a4f" size="+2">22.4%</font> of the population) reported the highest share of the population living below 1.09 international dollars.
                 </p>
 
-                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br />
 
                 <p style="font-size: 15px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
-                    <font size="+3" color="ff652f">Share of the population living in poverty, 2014.</font>
-                        <br />
-                        Poverty is defined as living with the per capita household consumption below 1.90 international dollars per day (in 2011 PPP prices). International dollars are adjusted for inflation and for price differences accross countries. PPP-Purchasing Power Parity.
-</p>
-
+                    <font size="+3" color="#ff8b63">Share of the population living in poverty, 2014.</font>
+                    <br />
+                    Poverty is defined as living with the per capita household consumption below 1.90 international dollars per day (in 2011 PPP prices). International dollars are adjusted for inflation and for price differences accross countries. PPP-Purchasing Power Parity.
+                </p>
+                <p style="-webkit-margin-before: -1.0em; -webkit-margin-after: 0.8em;font-size: 14px; font-weight: bold; color:#000000; text-align:left; font-family: 'Playfair Display', serif;">
+                    Data Source: <a href="http://data.worldbank.org/data-catalog/world-development-indicators">http://data.worldbank.org/data-catalog/world-development-indicators</a>
+                </p>
             </div>
         </div>
 
@@ -68,12 +70,19 @@
         <div class="section fp-section fp-table active fp-completely" style="width: 100%; height: 759px; padding-left: 4%; padding-right: 5%">
             <!--Narration Div-->
             <div style="float: left; width: 30%;">
-                <br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br />
                 <p style="font-size: 20px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
-                    Around the world, the share of people living in <font color="eae7dc" size="+2">poverty</font> has been decreasing since the World Bank started keeping records in 1981.
+                    <font color="#e85a4f" size="+4">poverty</font> is measured by setting a poverty line and counting the number of people living with consumption levels below that poverty line. This is the so-called poverty <font color="#1abeff">Headcount Ratio</font>. The  Headcount Ratio tells us the share of the population living with consumption below the poverty line.
                 </p>
-                <p style="font-size: 25px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
-                    <font color="eae7dc" size="+2">Poverty</font> is measured by setting a poverty line and counting the number of people living with consumption levels below that poverty line. This is the so-called poverty <font color="#4056a1">Headcount Ratio</font>. The  Headcount Ratio tells us the share of the population living with consumption below the poverty line.
+                <p style="font-size: 20px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                    Around the world, the share of people living in poverty has been decreasing since the World Bank started keeping records in 1981. As the worlds per capita Gross Domestic Product (GDP) increased the share of the population living in extreme poverty decreased. Despite the 2008 
+                </p>
+                <br /><br /><br />
+                <p style="font-size: 15px; font-weight: bold; color:#000000; text-align:justify; font-family: 'Playfair Display', serif;">
+                    <font size="+2" color="#ff8b63">Share of the population living in poverty vs. World per Capita Gross Domestic Product.</font>
+                </p>
+                <p style="-webkit-margin-before: -1.0em; -webkit-margin-after: 0.8em;font-size: 14px; font-weight: bold; color:#000000; text-align:left; font-family: 'Playfair Display', serif;">
+                Data Source: <a href="http://data.worldbank.org/data-catalog/world-development-indicators">http://data.worldbank.org/data-catalog/world-development-indicators</a>
                 </p>
             </div>
 
@@ -95,7 +104,7 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //options here
-                sectionsColor: ['#2f4454', '#3d586d', '#8e8d8a', 'whitesmoke'],
+                sectionsColor: ['#2f4454', '#385164', '#415e75', 'whitesmoke'],
                 navigation: true,
                 navigation: 'right',
                 parallax: true
@@ -104,7 +113,6 @@
 
         // utilities
         var parseTime = d3.timeParse("%Y")
-
 
         // figure 1 variables (world map figure)
         var format = d3.format(",");
@@ -140,22 +148,6 @@
 
         svg1.call(tip);
 
-        //// points
-        //aa = [27.8493, -14.1339];
-        //bb = [27.8493, -14.1339];
-
-        //svg1.selectAll("line")
-        //    .data([aa, bb]).enter()
-        //    .append("line")
-        //    .attr("x1", function (d) { console.log(projection(d)); return projection(d)[0]; })
-        //    .attr("y1", function (d) { return projection(d)[1]; })
-        //    .attr("x2", function (d) { console.log(projection(d)+65); return projection(d)[0]+65; })
-        //    .attr("y2", function (d) { return projection(d)[1]+65; })
-        //    //.attr("r", "8px")
-        //    .attr("stroke", "white")
-
-
-
         // Legend
         var g1 = svg1.append("g")
             .attr("class", "legendThreshold")
@@ -182,8 +174,6 @@
             .defer(d3.json, "http://enjalot.github.io/wwsd/data/world/world-110m.geojson")
             .defer(d3.csv, "./data/poverty_map1.csv")
             .await(ready);
-
-
 
         function ready(error, data, population) {
             var populationById = {};
@@ -230,63 +220,180 @@
         }
 
         //-------------FIGURE 2-----------------//
-        // figure 2 variables
-        var svg = d3.select("#Global"),
-            margin = { top: 25, right: 80, bottom: 30, left: 40 },
-            width = +svg.attr("width") - margin.left - margin.right,
-            height = +svg.attr("height") - margin.top - margin.bottom;
 
-        //var parseTime = d3.timeParse("%Y")
+        // set the dimensions and margins of the graph
+        var margin = { top: 20, right: 40, bottom: 30, left: 50 },
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        // parse the date / time
+        //var parseTime = d3.timeParse("%Y");
         bisectDate = d3.bisector(function (d) { return d.year; }).left;
-
         var formatTime = d3.timeFormat("%Y")
 
+        // set the ranges
         var x = d3.scaleTime().range([0, width]);
-        var y = d3.scaleLinear().range([height, 0]);
-
-        var line = d3.line()
+        var y0 = d3.scaleLinear().range([height, 0]);
+        var y1 = d3.scaleLinear().range([height, 0]);
+        var z = d3.scaleOrdinal(d3.schemeCategory10)
+        // define the 1st line
+        var valueline = d3.line()
             .x(function (d) { return x(d.year); })
-            .y(function (d) { return y(d.value); });
+            .y(function (d) { return y0(d.pov); });
 
-        var g = svg.append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        // define the 2nd line
+        var valueline2 = d3.line()
+            .x(function (d) { return x(d.year); })
+            .y(function (d) { return y1(d.gdp); });
 
-        //figure 2
-        d3.json("./data/slide1_data.json", function (error, data) {
+        var svg = d3.select("#Global")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // Get the data
+        d3.csv("./data/pov-gdp1.csv", function (error, data) {
             if (error) throw error;
 
+            // format the data
             data.forEach(function (d) {
                 d.year = parseTime(d.year);
-                d.value = +d.value;
+                d.pov = +d.pov;
+                d.gdp = +d.gdp;
             });
 
+            // Scale the range of the data
             x.domain(d3.extent(data, function (d) { return d.year; }));
-            y.domain([d3.min(data, function (d) { return d.value; }), d3.max(data, function (d) { return d.value; })]);
+            y0.domain([0, d3.max(data, function (d) { return Math.max(d.pov); })]);
+            y1.domain([0, d3.max(data, function (d) { return Math.max(d.gdp); })]);
 
-            g.append("g")
+            // Add the valueline path.
+            svg.append("path")
+                .data([data])
+                .attr("class", "line")
+                .style("stroke", "#757241")
+                .style("stroke-width", "4px")
+                .attr("d", valueline);
+
+            // Add the valueline2 path.
+            svg.append("path")
+                //.interpolate("basis")
+                .data([data])
+                .attr("class", "line")
+                .style("stroke", "#754144")
+                .style("stroke-width", "4px")
+                .attr("d", valueline2);
+
+            // Add the X Axis
+            svg.append("g")
                 .attr("class", "axis axis--x")
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x));
 
-            g.append("g")
+            // Add the Y0 Axis
+            svg.append("g")
                 .attr("class", "axis axis--y")
-                .call(d3.axisLeft(y).ticks(8).tickFormat(function (d) { return parseInt(d) + "%"; }))
+                .call(d3.axisLeft(y0))
                 .append("text")
                 .attr("class", "axis-title")
                 .attr("transform", "rotate(-90)")
                 .attr("y", 5)
                 .attr("dy", ".71em")
                 .attr("x", -30)
-                .attr("font-size", "20px")
+                .attr("font-size", "16px")
                 .style("text-anchor", "end")
                 .text("Percent of the World in Poverty");
 
-            g.append("path")
-                .datum(data)
-                .attr("class", "line")
-                .attr("d", line);
+            // Add the Y1 Axis
+            svg.append("g")
+                .attr("class", "axis axis--y")
+                .attr("transform", "translate( " + width + ", 0 )")
+                .call(d3.axisRight(y1))
+                .append("text")
+                .attr("class", "axis-title")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -15)
+                .attr("dy", ".71em")
+                .attr("x", -10)
+                .attr("font-size", "16px")
+                .style("text-anchor", "end")
+                .text("World GDP per Capita (in Trillion Dollars)");
 
-            var focus = g.append("g")
+            // legend
+            var color1 = d3.scaleThreshold()
+                .domain([0, 1])
+                .range(["#757241", "#754144"]);
+
+            // Legend
+            var g = svg.append("g")
+                .attr("class", "legendThreshold")
+                .attr("transform", "translate( 600,400)");
+
+            g.append("text")
+                .attr("class", "caption")
+                .attr("x", 0)
+                .attr("y", -15)
+                .text("% of Population in Poverty, 2014");
+
+            var labels1 = ["% of Population Below Poverty Line", "World GDP in Trillions of Dollars"];
+
+            var legend1 = d3.legendColor()
+                .labels(function (d) { return labels1[d.i]; })
+                .shapePadding(0)
+                .scale(color1);
+
+            svg.select(".legendThreshold")
+                .call(legend1);
+
+            // Annotation
+            var circle = svg.append("circle")
+                .attr("cx", 733)
+                .attr("cy", 85)
+                .attr("r", 20)
+                .style("fill", "rgba(0, 0, 0, 0.0)")
+                .style("stroke", "#000000")
+                .style("stroke-dasharray", ("3, 3"))
+
+            var lines12 = svg.append("line")
+                .attr("x1", 733)
+                .attr("x2", 733)
+                .attr("y1", 233)
+                .attr("y2", 105)
+                .style("stroke", "black")
+                .style("stroke-width", "2px")
+                .style("stroke-dasharray", ("3, 3"));
+
+            var lines1 = svg.append("line")
+                .attr("x1", 718)
+                .attr("x2", 700)
+                .attr("y1", 72)
+                .attr("y2", 55)
+                .style("stroke", "black")
+                .style("stroke-width", "2px");
+
+            var circle2 = svg.append("circle")
+                .attr("cx", 733)
+                .attr("cy", 254)
+                .attr("r", 20)
+                .style("fill", "rgba(0, 0, 0, 0.0)")
+                .style("stroke", "#000000")
+                .style("stroke-dasharray", ("3, 3"));
+
+
+            var note = svg.append("g")
+                .attr("class", "legendThreshold")
+                .attr("transform", "translate(520,65)");
+
+            note.append("text")
+                .attr("class", "caption")
+                .attr("x", 0)
+                .attr("y", -15)
+                .text("2008, Great Financial Crisis");
+
+            // Tooltips
+            var focus = svg.append("g")
                 .attr("class", "focus")
                 .style("display", "none");
 
@@ -304,16 +411,31 @@
                 .attr("r", 7.5);
 
             focus.append("text")
-                .attr("class", "y1")
+                .attr("class", "y2")
                 .attr("x", 15)
                 .attr("dy", ".41em")
                 .attr("fill", "#f0f0f0");
 
             focus.append("text")
-                .attr("class", "y2")
+                .attr("class", "y3")
                 .attr("x", 20)
                 .attr("dy", "-.80em")
                 .attr("fill", "#000000");
+
+            //for (var i = 1; i < data.length; i++) {
+            //    focus.append("g")
+            //        .attr("class", "focus" + i)
+            //        .append("circle")
+            //        .style("stroke", y1(data[i].id))
+            //        .style("fill", y1(data[i].id))
+            //        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+            //        .attr("r", 2);
+            //    svg.select(".focus" + i)
+            //        .append("text")
+            //        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+            //        .attr("x", 2)
+            //        .attr("dy", ".35em");
+            //}
 
             svg.append("rect")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
@@ -321,20 +443,70 @@
                 .attr("width", width)
                 .attr("height", height)
                 .on("mouseover", function () { focus.style("display", null); })
-                .on("mouseout", function () { focus.style("display", null); })
-                .on("mousemove", mousemove);
+                .on("mouseout", function () { focus.style("display", "none"); })
+                .on("mousemove", mousemove1);
+
 
             function mousemove() {
+
+                var x0 = x.invert(d3.mouse(this)[0]);
+                i = bisectDate(data, x0, 1),
+                    d0 = data[i - 1],
+                    d1 = data[i],
+                    d = x0 - d0.year > d1.year - x0 ? d1 : d0
+                focus.attr("transform", "translate(" + x(d.year) + "," + y0(d.pov) + ")");
+                focus.select("text.y2").text(function () { return d.pov + "%" });
+                focus.select("text.y3").text(function () { return formatTime(d.year) });
+                focus.select(".x-hover-line").attr("y2", height - y0(d.pov));
+                focus.select(".y-hover-line").attr("x2", width + width);
+            }
+
+
+            //focus1.append("line")
+            //    .attr("class", "x-hover-line hover-line")
+            //    .attr("y1", 0)
+            //    .attr("y2", height);
+
+            //focus1.append("line")
+            //    .attr("class", "y-hover-line hover-line")
+            //    .attr("x1", width)
+            //    .attr("x2", width);
+
+            //focus1.append("circle")
+            //    .attr("r", 7.5);
+
+            //focus1.append("text")
+            //    .attr("class", "y2")
+            //    .attr("x", 15)
+            //    .attr("dy", ".41em")
+            //    .attr("fill", "#f0f0f0");
+
+            //focus1.append("text")
+            //    .attr("class", "y3")
+            //    .attr("x", 20)
+            //    .attr("dy", "-.80em")
+            //    .attr("fill", "#000000");
+
+            //svg.selectA("rect")
+            //    //.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+            //    //.attr("class", "overlay")
+            //    //.attr("width", width)
+            //    //.attr("height", height)
+            //    .on("mouseover", function () { focus1.style("display", null); })
+            //    .on("mouseout", function () { focus1.style("display", "none"); })
+            //    .on("mousemove", mousemove1);
+
+            function mousemove1() {
 
                 var x0 = x.invert(d3.mouse(this)[0]),
                     i = bisectDate(data, x0, 1),
                     d0 = data[i - 1],
                     d1 = data[i],
                     d = x0 - d0.year > d1.year - x0 ? d1 : d0
-                focus.attr("transform", "translate(" + x(d.year) + "," + y(d.value) + ")");
-                focus.select("text.y1").text(function () { return d.value + "%" });
-                focus.select("text.y2").text(function () { return formatTime(d.year) });
-                focus.select(".x-hover-line").attr("y2", height - y(d.value));
+                focus.attr("transform", "translate(" + x(d.year) + "," + y1(d.gdp) + ")");
+                focus.select("text.y2").text(function () { return "$ " + d.gdp + " Trillion" });
+                focus.select("text.y3").text(function () { return formatTime(d.year) });
+                focus.select(".x-hover-line").attr("y2", height - y1(d.gdp));
                 focus.select(".y-hover-line").attr("x2", width + width);
             }
         });

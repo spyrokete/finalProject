@@ -120,8 +120,14 @@ body {
     stroke-width: 5px;
 }
 
-.hover-line {
+.focus1 circle {
+    fill: #e85a4f;
     stroke: #6F257F;
+    stroke-width: 5px;
+}
+
+.hover-line {
+    stroke: rgba(0,0,0,0.9);
     stroke-width: 2px;
     stroke-dasharray: 3,3;
 }
