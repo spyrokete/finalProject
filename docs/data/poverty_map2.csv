@@ -1,0 +1,218 @@
+id,name,population
+AFG,Afghanistan,No Data
+ALB,Albania,No Data
+DZA,Algeria,No Data
+ASM,American Samoa,No Data
+AND,Andorra,No Data
+AGO,Angola,No Data
+ATG,Antigua and Barbuda,No Data
+ARG,Argentina,0.7
+ARM,Armenia,2.3
+ABW,Aruba,No Data
+AUS,Australia,No Data
+AUT,Austria,0.2
+AZE,Azerbaijan,No Data
+BHS,"Bahamas, The",No Data
+BHR,Bahrain,No Data
+BGD,Bangladesh,No Data
+BRB,Barbados,No Data
+BLR,Belarus,0
+BEL,Belgium,0
+BLZ,Belize,No Data
+BEN,Benin,No Data
+BMU,Bermuda,No Data
+BTN,Bhutan,No Data
+BOL,Bolivia,5.8
+BIH,Bosnia and Herzegovina,No Data
+BWA,Botswana,No Data
+BRA,Brazil,2.8
+VGB,British Virgin Islands,No Data
+BRN,Brunei Darussalam,No Data
+BGR,Bulgaria,1.5
+BFA,Burkina Faso,43.7
+BDI,Burundi,No Data
+CPV,Cabo Verde,No Data
+KHM,Cambodia,No Data
+CMR,Cameroon,23.8
+CAN,Canada,No Data
+CYM,Cayman Islands,No Data
+CAF,Central African Republic,No Data
+TCD,Chad,No Data
+CHI,Channel Islands,No Data
+CHL,Chile,No Data
+CHN,China,1.4
+COL,Colombia,5
+COM,Comoros,No Data
+COD,"Congo, Dem. Rep.",No Data
+COG,"Congo, Rep.",No Data
+CRI,Costa Rica,1.4
+CIV,Cote d'Ivoire,No Data
+HRV,Croatia,1
+CUB,Cuba,No Data
+CUW,Curacao,No Data
+CYP,Cyprus,0
+CZE,Czech Republic,0
+DNK,Denmark,0.2
+DJI,Djibouti,No Data
+DMA,Dominica,No Data
+DOM,Dominican Republic,2.3
+ECU,Ecuador,2.6
+EGY,"Egypt, Arab Rep.",No Data
+SLV,El Salvador,3
+GNQ,Equatorial Guinea,No Data
+ERI,Eritrea,No Data
+EST,Estonia,0.7
+ETH,Ethiopia,No Data
+FRO,Faroe Islands,No Data
+FJI,Fiji,No Data
+FIN,Finland,0
+FRA,France,0
+PYF,French Polynesia,No Data
+GAB,Gabon,No Data
+GMB,"Gambia, The",No Data
+GEO,Georgia,5.3
+DEU,Germany,No Data
+GHA,Ghana,No Data
+GIB,Gibraltar,No Data
+GRC,Greece,1.5
+GRL,Greenland,No Data
+GRD,Grenada,No Data
+GUM,Guam,No Data
+GTM,Guatemala,8.7
+GIN,Guinea,No Data
+GNB,Guinea-Bissau,No Data
+GUY,Guyana,No Data
+HTI,Haiti,No Data
+HND,Honduras,15.9
+HKG,"Hong Kong SAR, China",No Data
+HUN,Hungary,0.7
+ISL,Iceland,0
+IND,India,No Data
+IDN,Indonesia,7.9
+IRN,"Iran, Islamic Rep.",0.2
+IRQ,Iraq,No Data
+IRL,Ireland,0.5
+IMN,Isle of Man,No Data
+ISR,Israel,No Data
+ITA,Italy,1.2
+JAM,Jamaica,No Data
+JPN,Japan,No Data
+JOR,Jordan,No Data
+KAZ,Kazakhstan,0
+KEN,Kenya,No Data
+KIR,Kiribati,No Data
+PRK,"Korea, Dem. People’s Rep.",No Data
+KOR,"Korea, Rep.",No Data
+XKX,Kosovo,0.7
+KWT,Kuwait,No Data
+KGZ,Kyrgyz Republic,1.3
+LAO,Lao PDR,No Data
+LVA,Latvia,0.7
+LBN,Lebanon,No Data
+LSO,Lesotho,No Data
+LBR,Liberia,38.6
+LBY,Libya,No Data
+LIE,Liechtenstein,No Data
+LTU,Lithuania,1.2
+LUX,Luxembourg,0.2
+MAC,"Macao SAR, China",No Data
+MKD,"Macedonia, FYR",5
+MDG,Madagascar,No Data
+MWI,Malawi,No Data
+MYS,Malaysia,No Data
+MDV,Maldives,No Data
+MLI,Mali,No Data
+MLT,Malta,0
+MHL,Marshall Islands,No Data
+MRT,Mauritania,6
+MUS,Mauritius,No Data
+MEX,Mexico,4.1
+FSM,"Micronesia, Fed. Sts.",No Data
+MDA,Moldova,0
+MCO,Monaco,No Data
+MNG,Mongolia,0.2
+MNE,Montenegro,0
+MAR,Morocco,No Data
+MOZ,Mozambique,62.9
+MMR,Myanmar,No Data
+NAM,Namibia,No Data
+NRU,Nauru,No Data
+NPL,Nepal,No Data
+NLD,Netherlands,0
+NCL,New Caledonia,No Data
+NZL,New Zealand,No Data
+NIC,Nicaragua,3.2
+NER,Niger,44.5
+NGA,Nigeria,No Data
+MNP,Northern Mariana Islands,No Data
+NOR,Norway,0
+OMN,Oman,No Data
+PAK,Pakistan,No Data
+PLW,Palau,No Data
+PAN,Panama,3.5
+PNG,Papua New Guinea,No Data
+PRY,Paraguay,2.4
+PER,Peru,3.7
+PHL,Philippines,No Data
+POL,Poland,0
+PRT,Portugal,0.5
+PRI,Puerto Rico,No Data
+QAT,Qatar,No Data
+ROU,Romania,No Data
+RUS,Russian Federation,0
+RWA,Rwanda,No Data
+WSM,Samoa,No Data
+SMR,San Marino,No Data
+STP,Sao Tome and Principe,No Data
+SAU,Saudi Arabia,No Data
+SEN,Senegal,No Data
+SRB,Serbia,No Data
+SYC,Seychelles,No Data
+SLE,Sierra Leone,No Data
+SGP,Singapore,No Data
+SXM,Sint Maarten (Dutch part),No Data
+SVK,Slovak Republic,0.7
+SVN,Slovenia,0
+SLB,Solomon Islands,No Data
+SOM,Somalia,No Data
+ZAF,South Africa,18.9
+SSD,South Sudan,No Data
+ESP,Spain,0.7
+LKA,Sri Lanka,No Data
+KNA,St. Kitts and Nevis,No Data
+LCA,St. Lucia,No Data
+MAF,St. Martin (French part),No Data
+VCT,St. Vincent and the Grenadines,No Data
+SDN,Sudan,No Data
+SUR,Suriname,No Data
+SWZ,Swaziland,No Data
+SWE,Sweden,0.5
+CHE,Switzerland,0
+SYR,Syrian Arab Republic,No Data
+TJK,Tajikistan,No Data
+TZA,Tanzania,No Data
+THA,Thailand,No Data
+TLS,Timor-Leste,30.3
+TGO,Togo,No Data
+TON,Tonga,No Data
+TTO,Trinidad and Tobago,No Data
+TUN,Tunisia,No Data
+TUR,Turkey,0.3
+TKM,Turkmenistan,No Data
+TCA,Turks and Caicos Islands,No Data
+TUV,Tuvalu,No Data
+UGA,Uganda,No Data
+UKR,Ukraine,0
+ARE,United Arab Emirates,No Data
+GBR,United Kingdom,0.2
+USA,United States,No Data
+URY,Uruguay,0.1
+UZB,Uzbekistan,No Data
+VUT,Vanuatu,No Data
+VEN,"Venezuela, RB",No Data
+VNM,Vietnam,2.6
+VIR,Virgin Islands (U.S.),No Data
+PSE,West Bank and Gaza,No Data
+YEM,"Yemen, Rep.",18.8
+ZMB,Zambia,No Data
+ZWE,Zimbabwe,No Data

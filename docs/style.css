@@ -3,78 +3,6 @@ body {
     font: 15px 'Playfair Display', serif;
 }
 
-/*Global Map Styles*/
-
-.names {
-    fill: none;
-    stroke: #fff;
-    stroke-linejoin: round;
-}
-
-/* Tooltip CSS */
-.tooltip {
-    line-height: 1.5;
-    font-weight: 400;
-    font-family: 'Playfair Display', serif;
-    background: rgba(0, 0, 0, 0.6);
-    color: #FFA500;
-    border-radius: 1px;
-    pointer-events: none;
-}
-
-    /* Creates a small triangle extender for the tooltip */
-    .tooltip:after {
-        box-sizing: border-box;
-        display: inline;
-        font-size: 8px;
-        width: 100%;
-        line-height: 1.5;
-        color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        pointer-events: none;
-    }
-
-    /* Northward tooltips */
-    .tooltip.n:after {
-        content: "\25BC";
-        margin: -1px 0 0 0;
-        top: 100%;
-        left: 0;
-        text-align: center;
-    }
-
-    /* Eastward tooltips */
-    .tooltip.e:after {
-        content: "\25C0";
-        margin: -4px 0 0 0;
-        top: 50%;
-        left: -8px;
-    }
-
-    /* Southward tooltips */
-    .tooltip.s:after {
-        content: "\25B2";
-        margin: 0 0 1px 0;
-        top: -8px;
-        left: 0;
-        text-align: center;
-    }
-
-    /* Westward tooltips */
-    .tooltip.w:after {
-        content: "\25B6";
-        margin: -4px 0 0 -1px;
-        top: 50%;
-        left: 100%;
-    }
-
-/*    text{
-      pointer-events:none;
-    }*/
-
-.details {
-    color: white;
-}
 
 .legendThreshold {
     font-size: 14px;
@@ -95,13 +23,13 @@ body {
     fill: #000000;
 }
 
-    .axis path,
-    .axis line {
-        fill: none;
-        stroke: #000000;
-        stroke-width: 2px;
-        shape-rendering: crispEdges;
-    }
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
 
 .line {
     fill: none;
@@ -109,25 +37,56 @@ body {
     stroke-width: 2px;
 }
 
-.overlay {
-    fill: none;
-    pointer-events: all;
+/*third figure styles*/
+
+.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Oxigen', sans-serif;
+    color: #595959;
+    background: #e6e6e6;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #808080;
+    border-radius: 2.5px;
+    pointer-events: none;
 }
 
-.focus circle {
-    fill: #e85a4f;
-    stroke: #6F257F;
-    stroke-width: 5px;
+.legend {
+    font-size: 13px;
+    /*text-shadow: 2px 2px 2px #aaa;*/
 }
 
-.focus1 circle {
-    fill: #e85a4f;
-    stroke: #6F257F;
-    stroke-width: 5px;
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0;
+    shape-rendering: crispEdges;
 }
 
-.hover-line {
-    stroke: rgba(0,0,0,0.9);
-    stroke-width: 2px;
-    stroke-dasharray: 3,3;
+.grid path {
+    stroke-width: 0;
+
 }
+
+#footer {
+    position: fixed;
+    height: 30px;
+    display: block;
+    width: 230px;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 10px 0 0 0;
+    bottom: 0px;
+    border-top-right-radius: 8px;
+    text-decoration: none;
+}
+
+    #footer:hover {
+        opacity: 1;
+        background-color: #5f86a6;
+    }
